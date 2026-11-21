@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Justina Ekwote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">J<span>.</span>E</a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle">☾</button>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="planner-page">
+
+        <section class="page-heading">
+            <span class="section-label">STAY ORGANised</span>
+            <h1>Academic <span>Planner</span></h1>
+            <p>Keep track of your assignments, studies and deadlines.</p>
+        </section>
+
+        <section class="planner-container">
+
+            <div class="planner-form">
+                <h2>Add a New Task</h2>
+
+                <form id="taskForm">
+                    <label for="taskInput">Task Description</label>
+                    <input type="text" id="taskInput" placeholder="Enter your task">
+
+                    <label for="taskDate">Due Date</label>
+                    <input type="date" id="taskDate">
+
+                    <button type="submit" class="primary-btn">Add Task</button>
+                </form>
+            </div>
+
+            <div class="task-section">
+                <div class="task-heading">
+                    <h2>My Tasks</h2>
+                    <span id="taskCount">0 Tasks</span>
+                </div>
+
+                <ul id="taskList" class="task-list">
+                    <li class="empty-message">No tasks added yet.</li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Justina Onyeche Ekwote.</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/planner.js"></script>
+
+</body>
+</html>
